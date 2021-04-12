@@ -1,0 +1,291 @@
+<html>
+
+<head>
+    
+    
+    <style>
+        
+        .intro{    
+                  
+        letter-spacing;6px;
+        color:white;
+        background:blue;
+        padding: 20px;
+             
+        } 
+        
+        
+        .thirds{
+            
+            width: 33%;
+            
+        }
+     body{  
+         font-family:tahoma;
+        text-align: center;
+         }
+        header {
+        letter-spacing;6px;
+        color:white;
+        background:purple;
+        padding: 20px;
+             }
+        
+       h2[font-size: 25px;]
+        .container{
+        display:flex;
+            justify-content: center;
+            }
+        
+
+        .container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .card {
+            border: 1px solid #ccc;
+            background-color: aqua;
+            margin 25px;
+            padding: 25px;
+            box-shadow: 6px 6px 6px rgba(0,0,0,0.3)
+         }
+        
+        
+        
+        .icons{
+            font-size: 8em;
+            padding: 25px
+        }
+        
+        
+        
+        td { 
+        padding: 10px;
+            
+        }
+        
+        
+        
+        table {
+            margin:auto;
+        }
+        
+        #my-order {
+background-color: #29C1C4;
+padding: 25px;
+display: none;
+}
+
+<input class="button" type="reset" value="clear"
+        onclick="document.getElementById"('my-order').style.display='none'">
+        
+        
+    @media screen and (min-width: 50em) {
+.card {
+flex-basis: 325px;
+}
+}
+        
+    
+        
+
+    
+        
+        
+    </style>
+    
+    
+    
+    
+    </head>
+    
+    
+    <body>
+
+<header>
+    
+    <h1>
+
+        Beverages
+    
+    </h1>
+    
+  
+    
+    
+    </header>
+        
+        <br>
+        <br>
+
+<section class ="intro">
+    
+ 
+    <h2>
+    Welcome to Rupesh's Company.Inc
+    </h2>
+    
+  
+    
+
+    
+  </section>
+        
+        <br>
+        <br>
+
+<section class="container">
+        
+    <article class = "card">
+    <div class ="icons"> &#9749; </div>
+    <h3> Coffee </h3>
+        <p> Hot Milky Delicous Beverage</p>
+    <button> Order Now !! </button>
+    </article>
+    
+    <article class = "card">
+    <div class ="icons"> &#127861; </div>
+    <h3> Green Tea </h3>
+    <p> Delicious light tasty beverage</p>
+    <button> Order Now !! </button>
+    </article>
+    
+    <article class = "card">
+    <div class ="icons"> &#129371; </div>
+    <h3> Milk</h3>
+    <p> Cold or Hot tasty Berverage </p>
+    <button> Order Now !!</button>
+    </article>
+    
+    
+        </section>
+    
+    <form id="my-form">
+   
+    <section>  
+    <h2> My Order Form: </h2>
+        <table>
+    
+            <tr>
+            
+            <td> Name:</td>
+                <td><input typ="text" size="25" 
+                    name="my-name"></td>
+                 </tr>
+            
+            <tr>
+            
+            <td> Address: </td>
+                <td><input type="text" size="25"
+                name="my-address"></td>
+             </tr>
+              
+            
+            
+            
+            
+            <tr>
+        
+            <td> Favorite Drink:</td>
+             <td>
+              <select name="my-drink">
+                 
+                <option> Milk </option>
+                  <option> Coffee </option>
+                  <option> Tea </option>
+                 </select>  
+             
+                
+                </td>
+            </tr>
+            
+            
+            
+            
+            
+            <tr>
+            
+            <td> Quantity:</td>
+                <td>  
+                
+                <input type="number" name="my-qty"
+                       value="1 min=1" max="5">
+            
+                <small> (max 5) </small>
+                </td>
+        </tr>
+            
+            <tr>
+                
+            
+            </tr>
+            
+                <tr>
+            
+           
+                
+                    
+                    
+                    <td >
+                    
+                    
+                    </td>
+                
+            
+            </tr> 
+            
+            <tr>
+            
+            
+            </tr>
+          </table>
+        
+        <td colspan="2">
+            <input class="button"
+                    type="button"
+                    value="Process Order"
+        
+                   onclick="placeOrder();">
+            
+        <input class="button"
+                   type="reset"
+                   value="clear">
+        </td>
+        
+        
+        
+    </section>
+        <div id="my-order"></div>
+         </form>
+        
+
+        
+      <script>
+        
+        function placeOrder () {
+           var orderForm= document.getElementById("my-form");
+            results = "<h3> Success! </h3>  Here is your order.";
+            results+="<br>Name:" + orderForm.elements{"my-name"}.value;
+            results+= "<br> Adress:" + orderForm.elements{"my-adress"}.value;
+            results+= "<br> I like to order:" + orderForm.elements{"my-
+            drink}"}.value;
+            results += "<br>Quantity: " + orderForm.elements{"my-qty"}.value;
+            var orderResults = document.getElementById("my-oder");
+            orderResults.style.display = "block";
+            orderResults.innerHTML = results;
+            
+
+            
+        }
+        
+      </script>  
+      
+        
+</body>
+    
+    
+</html>
+
+
